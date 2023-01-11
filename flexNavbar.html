@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>FLEX NAVBAR</title>
+  </head>
+
+  <style>
+    .mainNav {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      background-color: orangered;
+      padding-top: 1em;
+      padding-bottom: 1em;
+      padding-right: 1em;
+      padding-left: 1em;
+      font-size: 1.1em;
+    }
+    .mainNav ul {
+      list-style-type: none;
+      display: flex;
+      flex-direction: row;
+      margin: 0;
+      padding: 0;
+      font-size: 1.1em;
+      cursor: pointer;
+    }
+    .mainNav ul a {
+      color: white;
+      margin-right: 1em;
+      font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+        "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+    }
+    .mainNav button {
+      color: orangered;
+      border-radius: 5px;
+      border: none;
+      background-color: white;
+    }
+
+    .mainNav a:link {
+      text-decoration: none;
+    }
+
+    .mainNav a:visited {
+      text-decoration: none;
+    }
+
+    .mainNav a:hover {
+      text-decoration: none;
+    }
+
+    .mainNav a:active {
+      text-decoration: none;
+    }
+    @media screen and (max-width: 580px) {
+      .mainNav,
+      .mainNav ul {
+        flex-direction: column;
+        text-align: center;
+      }
+    }
+  </style>
+  <body>
+    <nav class="mainNav">
+      <ul>
+        <li><a href="./flexNavbar.html">Logo</a></li>
+        <li><a href="./flexNavbar.html">Home</a></li>
+        <li><a href="./flexNavbar.html">Products</a></li>
+        <li><a href="./flexNavbar.html">Service</a></li>
+      </ul>
+      <form action="">
+        <input type="search" placeholder="Search" />
+        <button>Go</button>
+      </form>
+    </nav>
+  </body>
+</html>
